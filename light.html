@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZENITH Lab — パソコン・スマホ・AIのこと、気軽にご相談ください</title>
+<meta name="description" content="小さな会社やお店の、パソコン・スマホ・AI・アプリのお困りごとを、ていねいにお手伝いします。業務の仕組みづくり、AIの使い方、セキュリティの基本対策、美容業界のデジタル化。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffdf8;--cream:#fbf5ea;--ink:#3a3a44;--soft:#6c6a72;--gold:#c99a3e;--gold-soft:#f3e3bf;--blue:#4a74c9;--blue-soft:#e8effb;--line:#ece4d4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.9;font-size:16px}
+a{color:var(--blue)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:#fffdf8ee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;letter-spacing:.06em}
+.brand span{color:var(--gold)}
+nav a{color:var(--soft);text-decoration:none;font-size:14px;margin-left:20px}
+nav a:hover{color:var(--gold)}
+.hero{padding:84px 0 72px;text-align:center;background:radial-gradient(60% 70% at 50% 0%,var(--gold-soft) 0%,transparent 70%),radial-gradient(40% 50% at 90% 80%,var(--blue-soft),transparent 70%)}
+.hello{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 16px;font-size:13px;color:var(--soft)}
+h1{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:clamp(21px,6.1vw,44px);line-height:1.5;margin:20px 0 14px}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{max-width:620px;margin:0 auto;color:var(--soft)}
+.cta{display:inline-block;margin-top:30px;padding:13px 32px;border-radius:999px;background:var(--gold);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 18px #c99a3e40;transition:.2s}
+.cta:hover{transform:translateY(-1px);box-shadow:0 8px 22px #c99a3e55}
+section{padding:72px 0}
+section.alt{background:var(--cream)}
+h2{font-family:"Zen Maru Gothic",sans-serif;font-size:26px;margin:0 0 6px;text-align:center}
+.sub{text-align:center;color:var(--soft);margin:0 0 34px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 2px 10px #00000008}
+.card .icon{width:44px;height:44px;border-radius:12px;background:var(--gold-soft);display:grid;place-items:center;font-size:22px;margin-bottom:10px}
+.card h3{margin:0 0 6px;font-size:17px;font-family:"Zen Maru Gothic",sans-serif}
+.card p{margin:0;color:var(--soft);font-size:14px}
+.tag{display:inline-block;margin-top:12px;font-size:12px;color:var(--blue);background:var(--blue-soft);border-radius:999px;padding:1px 10px;text-decoration:none}
+.promise{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;max-width:900px;margin:0 auto}
+.promise div{background:#fff;border-radius:14px;padding:18px 20px;border-left:4px solid var(--gold)}
+.promise b{display:block;margin-bottom:2px}
+.promise span{color:var(--soft);font-size:14px}
+.about{max-width:720px;margin:0 auto;text-align:center;color:var(--soft)}
+.note{text-align:center;color:var(--soft);font-size:13px;margin-top:22px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;counter-reset:s;max-width:900px;margin:0 auto}
+.steps div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;position:relative}
+.steps div::before{counter-increment:s;content:counter(s);position:absolute;top:-12px;left:16px;width:26px;height:26px;border-radius:50%;background:var(--gold);color:#fff;font-size:13px;display:grid;place-items:center;font-weight:700}
+.steps b{display:block;margin-top:6px}
+.steps span{color:var(--soft);font-size:14px}
+.mode{font-size:12px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 12px;margin-left:16px;white-space:nowrap}
+footer{padding:36px 0;text-align:center;color:var(--soft);font-size:12px;border-top:1px solid var(--line)}
+@media (max-width:720px){nav{display:none}.hero{padding:64px 0 56px}section{padding:56px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="#">ZENITH <span>Lab</span></a>
+<nav><a href="#help">お手伝いできること</a><a href="#promise">お約束</a><a href="#apps">アプリ</a><a href="#contact">ご相談</a></nav><a class="mode" href="index.html" title="夜の表示に切り替える">🌙 夜の表示</a></div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+<span class="hello">小さな会社・お店のための、ITの相談室</span>
+<h1>パソコン・スマホ・AIのこと、<br><em>気軽にご相談ください。</em></h1>
+<p class="lead">「何から始めればいいか分からない」「このままで大丈夫かな」。そんなお悩みに、専門用語を使わず、ていねいにお応えします。お客様の予算と使いやすさを大切に、無理のない形をいっしょに考えます。</p>
+<a class="cta" href="#contact">相談してみる</a>
+</div></div>
+
+<section id="help"><div class="wrap">
+<h2>お手伝いできること</h2>
+<p class="sub">必要なところだけ、小さく始められます。</p>
+<div class="grid">
+<div class="card"><div class="icon">📋</div><h3>お仕事の手間を減らす</h3><p>見積・請求・予約・お問い合わせなど、手作業が多いお仕事を、今お使いの道具やAIで少しずつ楽にします。</p><span class="tag">どんな業種でも</span></div>
+<div class="card"><div class="icon">💬</div><h3>AIの使い方をお伝えする</h3><p>文章や資料づくりに、AIをどう使えばよいか。お仕事に合わせて、ゆっくり分かりやすくご説明します。使うときの注意点もいっしょに。</p><span class="tag">はじめての方も</span></div>
+<div class="card"><div class="icon">🔒</div><h3>パソコン・スマホの安全対策</h3><p>パスワードの管理、2段階認証、データのバックアップなど、まず押さえておきたい基本の対策を、いっしょに確認して設定します。</p><span class="tag">基本の対策から</span></div>
+<div class="card"><div class="icon">📱</div><h3>アプリ・Webツールづくり</h3><p>お店や会社専用の、シンプルなアプリやWebツールをお作りします。毎月の費用がなるべくかからない作り方をご提案します。</p></div>
+<div class="card"><div class="icon">✂️</div><h3>美容室・サロンのデジタル化</h3><p>代表は美容師です。カルテ、外国語のお客様の接客、発信など、サロンならではのお困りごとにも寄り添います。</p></div>
+</div>
+<p class="note">安全対策は、基本の点検と設定のお手伝いが中心です。専門的な診断や、トラブルが起きたあとの対応が必要なときは、信頼できる専門の窓口をご案内します。</p>
+</div></section>
+
+<section id="promise" class="alt"><div class="wrap">
+<h2>私たちのお約束</h2>
+<p class="sub">安心してご相談いただくために。</p>
+<div class="promise">
+<div><b>料金は、作業の前にお伝えします</b><span>お見積りにご納得いただいてから始めます。ご相談なく料金を追加することはありません。</span></div>
+<div><b>無理におすすめしません</b><span>必要のないものはおすすめしません。今あるもので十分なときは、そうお伝えします。</span></div>
+<div><b>大切な情報をお預かりしすぎません</b><span>パスワードなどはお客様ご自身で入力していただき、こちらでは控えません。</span></div>
+<div><b>できないことは、正直に</b><span>できること・できないことをはっきりお伝えし、必要なら適した専門家をご紹介します。</span></div>
+</div>
+</div></section>
+
+<section id="flow"><div class="wrap">
+<h2>ご相談の流れ</h2>
+<p class="sub">まずはお話をお聞かせください。</p>
+<div class="steps">
+<div><b>メッセージでご相談</b><span>お困りごとを、思いつくままお送りください。</span></div>
+<div><b>お話をうかがう</b><span>今の状況と、ご希望をていねいにお聞きします。</span></div>
+<div><b>ご提案とお見積り</b><span>無理のない方法と料金を、分かりやすくお伝えします。</span></div>
+<div><b>いっしょに進める</b><span>ご納得いただいてから、少しずつ進めます。</span></div>
+</div>
+</div></section>
+
+<section id="apps" class="alt"><div class="wrap">
+<h2>これまでに作ったアプリ</h2>
+<p class="sub">現場で働く方のために、ひとつずつ作ってきました。</p>
+<div class="grid">
+<div class="card"><h3>Hair Bridge</h3><p>美容室のための通訳アプリ。外国語のお客様の言葉を、日本語で聞けます。</p><a class="tag" href="https://nyaro2860-crypto.github.io/hairbridge-support/">くわしく見る</a></div>
+<div class="card"><h3>Lash Carte</h3><p>まつげサロンのカルテ。施術の記録を、端末の中に大切に保存します。</p><a class="tag" href="https://nyaro2860-crypto.github.io/lashcarte-support/">くわしく見る</a></div>
+<div class="card"><h3>Card Lens</h3><p>トレーディングカードの印刷のずれを、写真で測るアプリ。</p><a class="tag" href="https://nyaro2860-crypto.github.io/cardlens-support/">くわしく見る</a></div>
+<div class="card"><h3>Stage Caption</h3><p>講演でお話しした言葉を、翻訳の字幕にしてスライドに重ねる Mac アプリ。</p><a class="tag" href="https://nyaro2860-crypto.github.io/stagecaption-support/">くわしく見る</a></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap about">
+<h2>ご相談はこちらから</h2>
+<p>「こんなこと聞いてもいいのかな」ということでも大丈夫です。<br>Instagram のメッセージから、お気軽にお送りください。</p>
+<a class="cta" href="https://www.instagram.com/yuukiyuya/" rel="noopener">Instagram でメッセージを送る</a>
+</div></section>
+</main>
+
+<footer>© ZENITH Lab</footer>
+</body>
+</html>
