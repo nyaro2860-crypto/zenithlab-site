@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZENITH Lab — AI・アプリ・セキュリティで、仕事の仕組みをつくる</title>
+<meta name="description" content="AIとアプリで、小さな会社やお店の仕事の仕組みをつくります。業務の自動化、アプリ開発、セキュリティの基本対策、美容業界のDX。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b16;--panel:#0d1424;--line:#2a3550;--gold:#e2b04a;--gold2:#fff1b8;--gold3:#8a5a14;--ink:#f3ecdb;--muted:#a9a08a;--cyan:#5fe3ff;--sapphire:#2f6bff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.8;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(60% 50% at 50% 0%,#1a2547 0%,transparent 70%),radial-gradient(40% 40% at 85% 70%,#2a1a3a55,transparent 70%);pointer-events:none;z-index:-1}
+a{color:var(--gold2)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:#070b16cc;backdrop-filter:blur(8px);border-bottom:1px solid #e2b04a33}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:"Noto Serif JP",serif;font-weight:900;letter-spacing:.2em;background:linear-gradient(120deg,var(--gold2),var(--gold) 45%,var(--gold3));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:20px;text-decoration:none}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:20px}
+nav a:hover{color:var(--gold2)}
+.hero{padding:110px 0 90px;text-align:center;position:relative}
+.sigil{width:min(560px,90vw);height:min(560px,90vw);position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid #e2b04a33;box-shadow:0 0 0 22px #e2b04a0a,0 0 0 23px #e2b04a22,0 0 0 60px #5fe3ff08;animation:spin 80s linear infinite;pointer-events:none}
+.sigil::after{content:"";position:absolute;inset:18%;border-radius:50%;border:1px dashed #e2b04a44}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.eyebrow{color:var(--cyan);letter-spacing:.35em;font-size:12px}
+h1{font-family:"Noto Serif JP",serif;font-weight:900;font-size:clamp(34px,7vw,64px);line-height:1.35;margin:18px 0;background:linear-gradient(120deg,var(--gold2),var(--gold) 50%,#c58a26);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:640px;margin:0 auto;color:#d8cfb8}
+.cta{display:inline-block;margin-top:34px;padding:14px 34px;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;letter-spacing:.15em;background:linear-gradient(180deg,#e2b04a22,#e2b04a08);transition:.2s}
+.cta:hover{background:#e2b04a33;box-shadow:0 0 24px #e2b04a44}
+section{padding:80px 0;border-top:1px solid #ffffff0d}
+h2{font-family:"Noto Serif JP",serif;font-size:28px;margin:0 0 8px}
+h2 small{display:block;color:var(--gold);font-family:"Noto Sans JP";font-size:12px;letter-spacing:.3em;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:32px}
+.card{position:relative;background:linear-gradient(180deg,#121b30,#0b1222);border:1px solid var(--line);padding:24px;border-radius:4px}
+.card::before{content:"";position:absolute;inset:-1px;border:1px solid transparent;border-image:linear-gradient(135deg,var(--gold2),transparent 40%,transparent 60%,var(--gold)) 1;pointer-events:none}
+.card h3{margin:0 0 8px;font-size:18px;color:var(--gold2)}
+.card p{margin:0;color:#cfc6b0;font-size:14px}
+.gem{display:inline-block;width:10px;height:10px;transform:rotate(45deg);background:linear-gradient(135deg,#9cc2ff,var(--sapphire));margin-right:10px;box-shadow:0 0 10px #2f6bff88}
+.tag{display:inline-block;font-size:11px;color:var(--cyan);border:1px solid #5fe3ff55;padding:0 8px;margin-top:12px;letter-spacing:.1em}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about p{color:#d8cfb8}
+.quote{font-family:"Noto Serif JP",serif;font-size:20px;color:var(--gold2);border-left:2px solid var(--gold);padding-left:18px}
+.note{color:var(--muted);font-size:12px;margin-top:22px}
+footer{padding:40px 0;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid #e2b04a33}
+@media (max-width:720px){nav{display:none}.about{grid-template-columns:1fr}.hero{padding:80px 0 60px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="#">ZENITH Lab</a>
+<nav><a href="#about">私たちについて</a><a href="#services">できること</a><a href="#works">アプリ</a><a href="#contact">お問い合わせ</a></nav></div></header>
+
+<main>
+<div class="hero"><div class="sigil" aria-hidden="true"></div><div class="wrap">
+<div class="eyebrow">AI × APPS × SECURITY</div>
+<h1>仕事の現場に、<br>AIという翼を。</h1>
+<p class="lead">AI とアプリで、小さな会社やお店の仕事の仕組みをつくります。手作業を減らし、データを守り、毎月の費用を増やさない。現場で続けられる形で。</p>
+<a class="cta" href="#contact">ご相談はこちら</a>
+</div></div>
+
+<section id="about"><div class="wrap about">
+<div><h2><small>ABOUT</small>私たちについて</h2>
+<p>代表は美容師 × AI アーティスト。現場で働く人の目線から、通訳・カルテ・字幕などのアプリを自ら企画し、App Store で公開してきました。いまは美容に限らず、さまざまな業種の「仕事の仕組みづくり」に取り組んでいます。</p>
+<p>大切にしているのは、データを手元で守ること、毎月の維持費を増やさないこと、そしてできないことを「できる」と言わないことです。</p></div>
+<p class="quote">技術は、人の仕事を置きかえるためではなく、<br>人にしかできない仕事に、もっと時間を使うために。</p>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2><small>SERVICES</small>できること</h2>
+<div class="grid">
+<div class="card"><h3><span class="gem"></span>業務の仕組みづくり・自動化</h3><p>見積・請求・予約・問い合わせ・社内の情報共有など、手作業の多い仕事を、AI と表計算・既存のツールで整えます。</p><span class="tag">小さな会社・お店に</span></div>
+<div class="card"><h3><span class="gem"></span>AI 導入と社内講習</h3><p>文章・資料・画像づくりに AI を使う方法を、仕事の流れに合わせてお伝えします。使い方のルールづくりも一緒に。</p><span class="tag">はじめての方に</span></div>
+<div class="card"><h3><span class="gem"></span>アプリ・Web の開発</h3><p>iPhone アプリや社内用の Web ツールを、企画から公開まで。データは手元に保存し、維持費のかからない設計が基本です。</p></div>
+<div class="card"><h3><span class="gem"></span>セキュリティの基本対策</h3><p>パスワード管理、2段階認証、バックアップ、パソコンとスマホの設定、AI ツールを使うときの注意点などを点検し、設定をお手伝いします。</p><span class="tag">新しく始めた分野です</span></div>
+<div class="card"><h3><span class="gem"></span>美容業界の DX</h3><p>サロン専用アプリ、多言語の接客、カルテのデジタル化、ヘアカタログや広告の AI ビジュアル。美容の現場を知る代表が担当します。</p></div>
+</div>
+<p class="note">料金は内容に合わせてお見積りします。効果や売上をお約束するものではありません。セキュリティは基本対策の点検と設定の支援が中心です。侵入テストなどの専門的な診断は行っていません。</p>
+</div></section>
+
+<section id="works"><div class="wrap">
+<h2><small>APPS</small>公開しているアプリ</h2>
+<div class="grid">
+<div class="card"><h3>Hair Bridge</h3><p>美容室のための通訳アプリ。2台の端末をつなぎ、お客様の言葉を日本語で聞けます（中国語・英語・韓国語）。</p><a class="tag" href="https://nyaro2860-crypto.github.io/hairbridge-support/">サポートページ</a></div>
+<div class="card"><h3>Lash Carte</h3><p>まつげサロンのカルテ。マツエクの図とパーマの曲線を記録し、データは端末の中に。</p><a class="tag" href="https://nyaro2860-crypto.github.io/lashcarte-support/">サポートページ</a></div>
+<div class="card"><h3>Card Lens</h3><p>トレーディングカードの印刷のずれを測る、月のランクつきのアプリ。</p><a class="tag" href="https://nyaro2860-crypto.github.io/cardlens-support/">サポートページ</a></div>
+<div class="card"><h3>Stage Caption</h3><p>講演で話した言葉を、翻訳字幕にしてスライドの上に重ねる Mac アプリ。</p><a class="tag" href="https://nyaro2860-crypto.github.io/stagecaption-support/">サポートページ</a></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap" style="text-align:center">
+<h2><small>CONTACT</small>お問い合わせ</h2>
+<p style="color:#d8cfb8">ご相談・ご依頼は、Instagram のメッセージ（DM）からお気軽にどうぞ。</p>
+<a class="cta" href="https://www.instagram.com/yuukiyuya/" rel="noopener">Instagram でメッセージ</a>
+</div></section>
+</main>
+
+<footer>© ZENITH Lab</footer>
+</body>
+</html>
